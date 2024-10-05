@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Meta Data -->
+    <head>
+        <title>Portfolio</title>
+		<meta charset="UTF-8">
+        <meta name="description" content="My Portfolio">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="HTML, CSS, JavaScript, Portfolio">
+        <meta name="author" content="Alexis Mugisha">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+    </head>
+
+    <!-- Body -->
+    <body class="body-2" onload="loadBio()">
+
+        <!-- Top Horizontal Bar -->
+        <header>
+            <div id="name" class="flex-18-4">
+                alexis-mugisha
+            </div>
+            <div id="hello" class="flex-5 hello pointer" onclick="helloPage()">
+                _hello
+            </div>
+            <div id="about" class="flex-6 about pointer" onclick="aboutPage()">
+                _about-me
+            </div>
+            <div id="projects" class="flex-5 projects pointer" onclick="projectsPage()">
+                _projects
+            </div>
+            <div class="flex-50">
+
+            </div>
+            <div id="contact" class="flex-6 contact pointer" onclick="contactPage()">
+                _contact-me
+            </div>
+            <div id="menu-bars-div" class="pointer" onclick="toggleSidebar()">
+                <i id="menu-bars" class="fas fa-bars"></i>
+            </div>
+        </header>
+
+        <!-- Sidebar -->
+        <div id="sidebar" class="sidebar">
+            <div class="flex-2 sidebar-div pointer" onclick="toggleSidebar()">
+                <div class="flex-8">alexis-mugisha</div>
+                <div class="flex-1"><i class="fas fa-xmark"></i></div>
+            </div>
+            <div class="flex-2 sidebar-div white pointer" onclick="helloPage()">
+                _hello
+            </div>
+            <div class="flex-2 sidebar-div white pointer" onclick="aboutPage()">
+                _about-me
+            </div>
+            <div class="flex-2 sidebar-div white pointer" onclick="projectsPage()">
+                _projects
+            </div>
+            <div class="flex-2 sidebar-div white pointer" onclick="contactPage()">
+                _contact-me
+            </div>
+            <div class="flex-30 sidebar-div">
+
+            </div>
+            <div class="flex-2 sidebar-footer">
+                <div class="flex-8">
+                    find me on:
+                </div>
+                <div class="flex-1 pointer">
+                    <i class="fab fa-linkedin-in" onclick="linkedin()"></i>
+                </div>
+                <div class="flex-1 pointer" onclick="email()">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="flex-1 pointer" onclick="github()">
+                    <i class="fab fa-github"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div id="content-2" class="content-2">
+
+            <!-- Main Content Header -->
+            <div class="flex-16 resume-header">
+                <div id="resume-show" class="flex-18">
+                    <span id="resume-not-show">personal-info</span><span id="personal-info-show1-span" class="white">_about-me</span>
+                </div>
+                <div class="flex-16">
+                    personal-info
+                </div>
+                <div class="flex-20">
+                    
+                </div>
+                <div class="flex-38-5">
+                    
+                </div>
+            </div>
+
+            <!-- Main Content Body -->
+            <div class="flex-50 resume-body">
+
+                <!-- Main Content Body Column 1 -->
+                <div id="resume-body1" class="flex-18 resume-body1 stick">
+                    <div id="bio" class="pointer">
+                        <i class="fas fa-folder-open orange"></i>&nbsp;bio
+                    </div>
+                    <div id="workExp" class="pointer">
+                        <i class="fas fa-folder-open green"></i>&nbsp;work_experience
+                    </div>
+                    <div id="skills" class="pointer">
+                        <i class="fas fa-folder-open blue"></i>&nbsp;skills
+                    </div>
+                    <div id="education" class="pointer">
+                        <i class="fas fa-folder-open white"></i>&nbsp;education
+                    </div>
+                </div>
+
+                <!-- Main Content Body Column 2 -->
+                <div id="resume-body2" class="flex-37-4 scrollable resume-body2">
+                    
+                </div>
+
+                <!-- Main Content Body Column 3 -->
+                <div class="flex-38-6 scrollable resume-body3">
+                    <div class="snippet-comment">// Code snippet showcase:</div>
+                    <div class="snippet">
+                        <div class="flex-1 snippet-header">
+                            <i class="fab fa-github big-github-icon flex-1"></i>
+                            <div class="snippet-username flex-18">
+                                <div class="blue pointer" onclick="github()">@CodingAddict1530</div>
+                                <div>Java (JavaFX) code snippet</div>
+                            </div>
+                            <div class="flex-18">
+
+                            </div>
+                            <div class="flex-18 white view-project pointer" onclick="javaIDEProject()">
+                                View Project
+                            </div>
+                        </div>
+                        <div class="flex-5 snippet-body">
+                            <span class="green">/**</span><br>
+                            <span class="green"> * Pauses the execution of code for a given time.</span><br>
+                            <span class="green"> * @param <span class="white">method</span> the method to get executed.</span><br>
+                            <span class="green"> * @param <span class="white">duration</span> the duration of the pause.</span><br>
+                            <span class="green"> */</span><br>
+                            <span class="orange">public static void <span class="blue">pauseU</span></span><span class="white">(Runnable method, Duration duration) {</span><br>
+                            <span class="white">&nbsp;&nbsp;&nbsp;&nbsp;PauseTransition pause = <span class="orange">new</span> PauseTransition(duration);</span><br>
+                            <span class="white">&nbsp;&nbsp;&nbsp;&nbsp;pause.setOnFinished(e -> {</span><br>
+                            <span class="orange">&nbsp;&nbsp;&nbsp;&nbsp;try <span class="white">{</span></span><br>
+                            <span class="purple">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;method</span><span class="white">.run();</span><br>
+                            <span class="white">&nbsp;&nbsp;&nbsp;&nbsp;} <span class="orange">catch</span>(Exception ex) {</span>
+                            <span class="white">      System.<span class="purple">out</span>.println(ex.getMessage());</span>
+                            <span class="white">  }</span><br>
+                            <span class="white">&nbsp;&nbsp;&nbsp;&nbsp;});</span><br>
+                            <span class="white">&nbsp;&nbsp;&nbsp;&nbsp;pause.play();</span><br>
+                            <span class="white">}</span><br>
+                        </div>
+                    </div>
+                    <hr class="separator">
+                    <div class="snippet">
+                        <div class="flex-1 snippet-header">
+                            <i class="fab fa-github big-github-icon flex-1"></i>
+                            <div class="snippet-username flex-18">
+                                <div class="blue pointer" onclick="github()">@CodingAddict1530</div>
+                                <div>Python (Django) snippet</div>
+                            </div>
+                            <div class="flex-18">
+
+                            </div>
+                            <div class="flex-18 white view-project">
+                                Project Unavailable
+                            </div>
+                        </div>
+                        <div class="flex-5 snippet-body">
+                            <span>// Represents a Room Object in the Database.</span><br>
+                            <span class="orange">class</span><span class="white"> Room(models.Model):</span><br>
+                            <span class="white">&nbsp;&nbsp;&nbsp;&nbsp;host = models.ForeignKey(User, <span class="red">on_delete</span> = models.SET_NULL, <br>
+                                <span class="red">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;null</span> = <span class="orange">True</span>)</span><br>
+                            <span class="white">&nbsp;&nbsp;&nbsp;&nbsp;topic = models.ForeignKey(Topic, <span class="red">on_delete</span> = models.SET_NULL, <br>
+                                <span class="red">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;null</span> = <span class="orange">True</span>)</span><br>
+                            <span class="white">&nbsp;&nbsp;&nbsp;&nbsp;name = models.CharField(<span class="red">max_length</span> = <span class="blue">200</span>)</span><br>
+                            <span class="white">&nbsp;&nbsp;&nbsp;&nbsp;description = models.TextField(<span class="red">null</span> = <span class="orange">True</span>, <span class="red">blank</span> = <span class="orange">True</span>)</span><br>
+                            <span class="white">&nbsp;&nbsp;&nbsp;&nbsp;participants = models.ManyToManyField(User, <span class="red">related_name</span> = <br>
+                                <span class="green">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"participants"</span>, <span class="red">blank</span> = <span class="orange">True</span>)</span><br>
+                            <span class="white">&nbsp;&nbsp;&nbsp;&nbsp;updated = models.DateTimeField(<span class="red">auto_now</span> = <span class="orange">True</span>)</span><br>
+                            <span class="white">&nbsp;&nbsp;&nbsp;&nbsp;created = models.DateTimeField(<span class="red">auto_add_now</span> = <span class="orange">True</span>)</span><br><br>
+                            <span class="orange">&nbsp;&nbsp;&nbsp;&nbsp;class</span><span class="white"> Meta:</span><br>
+                            <span class="white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ordering = [<span class="white">'-updated'</span>, <span class="white">'-created'</span>]</span><br><br>
+                            <span class="orange">&nbsp;&nbsp;&nbsp;&nbsp;def</span><span class="white"> <span class="purple">__str__</span>(<span class="purple">self</span>):</span><br>
+                            <span class="orange">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return <span class="purple">self</span><span class="white">.name</span></span><br><br>
+
+                        </div>
+                    </div>
+                    <hr class="separator">
+                    <div class="snippet">
+                        <div class="flex-1 snippet-header">
+                            <i class="fab fa-github big-github-icon flex-1"></i>
+                            <div class="snippet-username flex-18">
+                                <div class="blue pointer" onclick="">@CodingAddict1530</div>
+                                <div>JavaScript code snippet</div>
+                            </div>
+                            <div class="flex-18">
+
+                            </div>
+                            <div class="flex-18 white view-project pointer" onclick="portfolioProject()">
+                                View Project
+                            </div>
+                        </div>
+                        <div class="flex-5 snippet-body">
+                            <span>// Make the functions below available globally.</span><br>
+                            <span class="purple"><i>window</i></span><span class="blue">.<span class="blue">startSlideshow</span> = <span class="blue">startSlideshow</span>;</span><br>
+                            <span class="purple"><i>window</i></span><span class="blue">.<span class="blue">stopSlideshow</span> = <span class="blue">stopSlideshow</span>;</span><br><br>
+                            <span class="green">/**</span><br>
+                            <span class="green"> * Hide all pictures and display the current one.</span><br>
+                            <span class="green"> * </span><br>
+                            <span class="green"> * @param <span class="white">className</span> the class name of the div pictures to be selected.</span><br>
+                            <span class="green"> * @param <span class="white">index</span> the position of the current slide.</span><br>
+                            <span class="green"> */</span><br>
+                            <span class="orange">function </span><span class="blue">showSlides</span><span class="white">(className, index) {</span><br>
+                            <span class="orange">&nbsp;&nbsp;&nbsp;&nbsp;let </span><span class="white">slides = <span class="purple"><i>document</i></span>.<span class="blue">getElementsByClassName</span>(className);</span><br>
+                            <span class="orange">&nbsp;&nbsp;&nbsp;&nbsp;for </span><span class="white">(<span class="orange">let </span>i = <span class="blue">0</span>; i < slides.<span class="purple">length</span>; i++) {</span><br>
+                            <span class="white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;slides[i].<span class="purple">style</span>.<span class="purple">display</span> = <span class="green">"none"</span>;</span><br>
+                            <span class="white">&nbsp;&nbsp;&nbsp;&nbsp;}</span><br>
+                            <span class="white">&nbsp;&nbsp;&nbsp;&nbsp;slideIndex[className] = index;</span><br>
+                            <span class="orange">&nbsp;&nbsp;&nbsp;&nbsp;if </span><span class="white">(slideIndex[className] > slides.<span class="purple">length</span>) {</span><br>
+                            <span class="white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;slideIndex[className] = <span class="blue">1</span>;</span><br>
+                            <span class="white">&nbsp;&nbsp;&nbsp;&nbsp;}</span><br>
+                            <span class="white">&nbsp;&nbsp;&nbsp;&nbsp;slides[slideIndex[className] - <span class="blue">1</span>].<span class="purple">style</span>.<span class="purple">display</span> = <span class="green">"block"</span>;</span><br>
+                            <span class="white">}</span>
+                        </div>
+                    </div>
+                    <hr class="separator">
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Horizontal Bar -->
+        <footer>
+            <div class="flex-5">
+                find me on:
+            </div>
+            <div id="linkedin" class="flex-1 pointer">
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+            <div class="flex-1 pointer" onclick="email()">
+                <i class="fas fa-envelope"></i>
+            </div>
+            <div class="flex-50 center">
+                <span class="pointer" onclick="email()">amugisha005@gmail.com</span>
+            </div>
+            <div id="github" class="flex-8 pointer">
+                @CodingAddict1530&nbsp;<i class="fab fa-github"></i>
+            </div>
+        </footer>
+
+        <!-- JavaScript -->
+        <script src="js/script.js"></script>
+    </body>
+</html>

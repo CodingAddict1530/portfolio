@@ -1,0 +1,1120 @@
+
+/* Define the font being used. */
+@font-face {
+    font-family: 'Fira Code';
+    src: url('../fonts/FiraCode-Regular.ttf') format('truetype');
+    
+}
+
+/* Style the scrollbar. */
+::-webkit-scrollbar {
+    background: #010C15;
+    width: 0.8em;
+    height: 0.8em;
+}
+
+/* Style the scrollbar thumb. */
+::-webkit-scrollbar-thumb {
+    background: rgba(229, 233, 240, 0.7);
+    border-radius: 0.5em;
+}
+
+/* Make the scrollbar corner invisible. */
+::-webkit-scrollbar-corner {
+    background-color: #010C15;
+}
+
+/* Style the bodies. */
+.body-1, .body-2 {
+
+    color: #607b96;
+    display: flex;
+    flex-direction: column;
+    min-height: 99vh;
+    margin: 0;
+    height: 99.8vh;
+    border: 0.05em solid #1E2D3D;
+    border-radius: 0.5em;
+    font-size: 0.6875em;
+    font-family: 'Fira Code', serif;
+
+}
+
+/* Add a background image to index.html body. */
+.body-1 {
+    background-image: 
+        url(../images/Background.png),
+        url(../images/Background_Blurs.png);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat, no-repeat;
+    background-position: 0 0, 55em 5em;
+    background-size: cover, 40em 40em;
+}
+
+/* Add a background image to the other bodies. */
+.body-2 {
+    background: url(../images/Background.png) no-repeat;
+    background-size: cover;
+}
+
+/* Style the header and footer. */
+header, footer {
+    display: flex;
+    flex-direction: row;
+    min-height: 2.5em;
+}
+
+/* Style all divs inside the header and footer. */
+header div, footer div {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    padding-left: 1.4em;
+    border: 0.05em solid #1E2D3D;
+}
+
+/* Apply flex 1. */
+.flex-1 {
+    flex: 1;
+}
+
+/* Apply flex 2. */
+.flex-2 {
+    flex: 2;
+}
+
+/* Apply flex 3. */
+.flex-3 {
+    flex: 3;
+}
+
+/* Apply flex 5. */
+.flex-5 {
+    flex: 5;
+}
+
+/* Apply flex 6. */
+.flex-6 {
+    flex: 6;
+}
+
+/* Apply flex 8. */
+.flex-8 {
+    flex: 8;
+}
+
+/* Apply flex 11.67. */
+.flex-11-67 {
+    flex: 11.67;
+}
+
+/* Apply flex 16. */
+.flex-16 {
+    flex: 16;
+}
+
+/* Apply flex 18. */
+.flex-18 {
+    flex: 18;
+}
+
+/* Apply flex 18.4. */
+.flex-18-4 {
+    flex: 18.4;
+}
+
+/* Apply flex 20. */
+.flex-20 {
+    flex: 20;
+}
+
+/* Apply flex 30. */
+.flex-30 {
+    flex: 30;
+}
+
+/* Apply flex 37.4. */
+.flex-37-4 {
+    flex: 37.4;
+}
+
+/* Apply flex 38.5. */
+.flex-38-5 {
+    flex: 38.5;
+}
+
+/* Apply flex 38.6. */
+.flex-38-6 {
+    flex: 38.6;
+}
+
+/* Apply flex 50. */
+.flex-50 {
+    flex: 50;
+}
+
+
+/* Styles the main content of the index.html page. */
+.content-1 {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+/* Styles the content on the left side of index.html page. */
+.content-left {
+    flex: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/* Styles the first group of sentences of the left side of index.html */
+.content-left-text-1 {
+    flex: 3;
+    font-size: 0.9375em;
+    color: #E5E9F0;
+}
+
+/* Styles the second group of sentences of the left side of index.html */
+.content-left-text-2 {
+    flex: 3;
+    font-size: 3.8em;
+    color: #E5E9F0;
+}
+
+/* Styles the third group of sentences of the left side of index.html */
+.content-left-text-3 {
+    flex: 3;
+    font-size: 1.7em;
+    color: #4D5BCE;
+}
+
+/* Styles the fourth group sentences of the left side of index.html */
+.content-left-text-4 {
+    flex: 3;
+    font-size: 0.9em;
+    color: #607B96;
+}
+
+/* Styles the fifth group of sentences of the left side of index.html */
+.content-left-text-5 {
+    flex: 3;
+    font-size: 0.9em;
+}
+
+/* Centers the items inside. */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Applies color blue. */
+.blue {
+    color: #4D5BCE;
+}
+
+/* Applies color green. */
+.green {
+    color: #43D9AD;
+}
+
+/* Applies color white. */
+.white {
+    color: #fff;
+}
+
+/* Applies color orange. */
+.orange {
+    color: #E99287;
+}
+
+/* Applies color purple. */
+.purple {
+    color: #C98BDF;
+}
+
+/* Applies color red. */
+.red {
+    color: #FF0000;
+}
+
+/* Styles the content on the right side of index.html page. */
+.content-right {
+    flex: 10;
+}
+
+/* Styles the image of me in index.html page. */
+.image-me {
+    width: 30em;
+    height: auto;
+    opacity: 0.9;
+    border-radius: 2em;
+}
+
+/* Turns the cursor to a pointer when hovered upon. */
+.pointer  {
+    cursor: pointer;
+}
+
+/* Styles the main content of the remaining pages. */
+.content-2 {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Styles all divs inside content-2. */
+.content-2 div {
+    width: 99.9%;
+}
+
+/* Styles the resume and contact headers. */
+.resume-header, .contact-header {
+    min-height: 1.9em;
+}
+
+/* Styles the resume and contact bodies. */
+.resume-body, .contact-body {
+    max-height: 86vh;
+}
+
+/* Styles the resume, projects and contact headers and bodies. */
+.resume-header, .resume-body, .projects-header, .projects-body, .contact-header, .contact-body {
+    display: flex;
+    flex-direction: row;
+    border: 0.05em solid #1E2D3D;
+}
+
+/* Styles the divs inside resume, projects and contact headers and bodies. */
+.resume-header div, .resume-body > div, .projects-header div, .projects-body > div, .contact-header > div, .contact-body > div {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    padding-left: 1.5em;
+    border: 0.05em solid #1E2D3D;
+}
+
+/* Makes a div scrollable vertically. */
+.scrollable {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* Styles the first part of the resume, project and contact bodies. */
+.resume-body1,  .project-body1, .contact-info-body1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 1.5em;
+}
+
+/* Styles all divs under the first part of resume, project, and contact bodies. */
+.resume-body1 div, .project-body1 div, .contact-info-body1 div {
+    border: 0;
+    padding: 0.6em;
+}
+
+/* Styles the second part of the body of resume.html. */
+.resume-body2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styles all divs inside the second part of the body of resume.html. */
+.resume-body2 div {
+    border: 0;
+}
+
+/* Styles the contents of numbers and sentences divs. */
+.numbers, .sentences {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 80vh;
+}
+
+/* Styles all divs under numbers and the divs directly under sentences. */
+.numbers div, .sentences > div {
+    padding: 0.4em;
+}
+
+/* Styles the third part of the body of resume.html. */
+.resume-body3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-height: 87vh;
+}
+
+/* Styles all divs inside the third part of the body of resume.html. */
+.resume-body3 > div {
+    border: 0;
+}
+
+/* Styles a code snippet. */
+.snippet {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-top: 0.05em solid #1E2D3D;
+    margin-top: 2em;
+}
+
+/* Styles the comment inside a code snippet. */
+.snippet-comment {
+    padding: 1.5em;
+    
+}
+
+/* Styles the header of a code snippet. */
+.snippet-header {
+    display: flex;
+    flex-direction: row;
+    border: 0;
+}
+
+/* Styles the big GitHub icon in snippets. */
+.big-github-icon {
+    font-size: 3em;
+}
+
+/* Styles the username in a snippet. */
+.snippet-username {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border: 0;
+    margin-left: 1em;
+}
+
+/* Styles the body of the code in the snippet.x */
+.snippet-body {
+    max-width: 42.5em;
+    background: #011001;
+    border: 0.2em solid #1E2D3D;
+    border-radius: 2em;
+    padding: 1em;
+    margin-top: 1em;
+}
+
+/* Styles the separator line. */
+.separator {
+    margin-top: 3em;
+    background-color: #E5E9F0;
+    width: 40em;
+}
+
+/* Styles the view project button. */
+.view-project {
+    border: 0.08em solid #1E2D3D;
+    max-width: 7em;
+    text-align: center;
+    padding: 0.7em;
+    border-radius: 1.5em;
+}
+
+
+/* Styles the icons representing languages and frameworks. */
+.language-icon {
+    font-size: 1.8em;
+}
+
+/* Styles small icons. */
+.small {
+    font-size: 1.2em;
+    padding: 0.7em 0 0;
+    margin: -0.15em;
+}
+
+/* Adds padding. */
+.pad {
+    padding: 0 0 0 0.5em;
+}
+
+/* Styles the input tag in custom-checkbox. */
+.custom-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+/* Styles the checkmark. */
+.checkmark {
+    position: absolute;
+    margin-top: 0.5em;
+    height: 1em;
+    width: 1em;
+    background-color: transparent;
+    border: 0.15em solid #1E2D3D;
+}
+
+/* Styles the checkmark when custom-checkbox is hovered upon. */
+.custom-checkbox:hover input ~ .checkmark{
+    background-color: #1E2D3D;
+}
+
+/* Styles the checkmark. */
+.custom-checkbox input[type="checkbox"]:checked + .checkmark {
+    background-color: #1E2D3D;
+}
+
+/* Styles the checkmark. */
+.custom-checkbox .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Styles the checkmark. */
+.custom-checkbox input[type="checkbox"]:checked + .checkmark:after {
+    display: block;
+}
+
+/* Styles the checkmark. */
+.custom-checkbox .checkmark:after {
+    width: 0.2em;
+    height: 0.5em;
+    bottom: 0.2em;
+    left: 0.25em;
+    border: solid white;
+    border-width: 0 0.2em 0.2em 0;
+    transform: rotate(45deg);
+}
+
+/* Styles the second part of the body of projects.html. */
+.projects-body2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border: 0.08em solid #1E2D3D;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+/* Styles a project. */
+.project {
+    border: 0.08em solid #1E2D3D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 38em;
+    max-width: 38em;
+    margin: 2em;
+    box-shadow: 0 0.3em 0.6em rgba(255, 255, 255, 0.1);
+    transition: box-shadow 0.5s ease, transform 0.5s ease;
+    border-radius: 15px;
+    background-color: #1E2D3D;
+}
+
+/* Styles the container of the buttons to change projects. */
+.change-project {
+    display: flex;
+    flex-direction: row;
+    max-width: 18vw;
+    position: absolute;
+    top: 9vh;
+    left: 48%;
+}
+
+/* Styles the buttons to change projects. */
+.change-project > div {
+    border: 0.05em solid #1E2D3D;
+    margin: 0.8em;
+    padding: 0.7em;
+    text-align: center;
+    background-color: #1E2D3D;
+    border-radius: 2em;
+    transition: box-shadow 0.5s ease, transform 0.5s ease;
+}
+
+/* Applies an animation when the buttons are hovered upon. */
+.change-project > div:hover {
+    box-shadow: 0 0.4em 0.6em rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
+/* Styles the body of a project. */
+.project-body {
+    margin-top: 1em;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles the header of a project. */
+.project-header {
+    padding: 1em 1em 1em 3em;
+}
+
+/* Styles the project when hovered upon. */
+.project:hover {
+    box-shadow: 0 0.6em 1em rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
+/* Sets and styles the image inside a project. Uses the default image. */
+.project-body-img {
+    background: url("../images/project1.png") no-repeat center;
+    background-size: 100% 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    min-height: 22em;
+    box-sizing: border-box;
+}
+
+/* Changes the image for slide 1 of project 1. */
+.project1.slide1 {
+    background: url("../images/Project1-1.png") no-repeat center;
+    background-size: 100% 100%;
+    width: 100%;
+}
+
+/* Changes the image for slide 2 of project 1. */
+.project1.slide2 {
+    background: url("../images/Project1-2.png") no-repeat center;
+    background-size: 100% 100%;
+    width: 100%;
+    display: none;
+}
+
+/* Changes the image for slide 3 of project 1. */
+.project1.slide3 {
+    background: url("../images/Project1-3.png") no-repeat center;
+    background-size: 100% 100%;
+    width: 100%;
+    display: none;
+}
+
+/* Changes the image for slide 4 of project 1. */
+.project1.slide4 {
+    background: url("../images/Project1-4.png") no-repeat center;
+    background-size: 100% 100%;
+    width: 100%;
+    display: none;
+}
+
+/* Changes the image for slide 5 of project 1. */
+.project1.slide5 {
+    background: url("../images/Project1-5.png") no-repeat center;
+    background-size: 100% 100%;
+    width: 100%;
+    display: none;
+}
+
+/* Changes the image for slide 6 of project 1. */
+.project1.slide6 {
+    background: url("../images/Project1-6.png") no-repeat center;
+    background-size: 100% 100%;
+    width: 100%;
+    display: none;
+}
+
+/* Changes the image for slide 7 of project 1. */
+.project1.slide7 {
+    background: url("../images/Project1-7.png") no-repeat center;
+    background-size: 100% 100%;
+    width: 100%;
+    display: none;
+}
+
+/* Changes the image for slide 8 of project 1. */
+.project1.slide8 {
+    background: url("../images/Project1-8.png") no-repeat center;
+    background-size: 100% 100%;
+    width: 100%;
+    display: none;
+}
+
+/* Changes the image for slide 1 of project 2. */
+.project2.slide1 {
+    background: url("../images/Project2-1.png") no-repeat center;
+    background-size: 100% 100%;
+    width: 100%;
+}
+
+/* Changes the image for slide 2 of project 2. */
+.project2.slide2 {
+    background: url("../images/Project2-2.png") no-repeat center;
+    background-size: 100% 100%;
+    width: 100%;
+    display: none;
+}
+
+/* Changes the image for slide 3 of project 2. */
+.project2.slide3 {
+    background: url("../images/Project2-3.png") no-repeat center;
+    background-size: 100% 100%;
+    width: 100%;
+    display: none;
+}
+
+/* Changes the image for slide 4 of project 2. */
+.project2.slide4 {
+    background: url("../images/Project2-4.png") no-repeat center;
+    background-size: 100% 100%;
+    width: 100%;
+    display: none;
+}
+
+/* Changes the image for slide 4 of project 2. */
+.project3.slide1 {
+    background: url("../images/Project3-1.png") no-repeat center;
+    background-size: 100% 100%;
+    width: 100%;
+}
+
+/* Changes the image for slide 4 of project 2. */
+.project3.slide2 {
+    background: url("../images/Project3-2.png") no-repeat center;
+    background-size: 100% 100%;
+    width: 100%;
+    display: none;
+}
+
+/* Changes the image for slide 4 of project 2. */
+.project3.slide3 {
+    background: url("../images/Project3-3.png") no-repeat center;
+    background-size: 100% 100%;
+    width: 100%;
+    display: none;
+}
+
+/* Changes the image for slide 4 of project 2. */
+.project3.slide4 {
+    background: url("../images/Project3-4.png") no-repeat center;
+    background-size: 100% 100%;
+    width: 100%;
+    display: none;
+}
+
+/* Changes the image for slide 4 of project 2. */
+.project3.slide5 {
+    background: url("../images/Project3-5.png") no-repeat center;
+    background-size: 100% 100%;
+    width: 100%;
+    display: none;
+}
+
+/*  */
+.project-body-body {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-body-body-text {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-body-body-button {
+    margin-top: 0.8em;
+    padding: 0.5em;
+    text-align: center;
+    max-width: 10em;
+    border-radius: 2em;
+    background-color: #010C15;
+    cursor: pointer;
+}
+
+.contact-info-body2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-info-body2 > div, .contact-info-body2 > button {
+    margin: 1em;
+}
+
+.name, .email, .message {
+    text-align: left;
+    padding-left: 50%;
+}
+
+.contact-input {
+    background-color: #011001;
+    border: 0.1em solid #1E2D3D;
+    border-radius: 0.5em;
+    margin-top: 0.6em;
+    height: 2em;
+    color: #607b96;
+    font-size: 11px;
+    padding: 0.5em;
+}
+
+.textarea {
+    height: 8em;
+    width: 20em;
+}
+
+.submitBtn {
+    background-color: #1C2B3A;
+    border: 0.1em solid #1E2D3D;
+    color: #fff;
+    font-size: 1em;
+    border-radius: 0.5em;
+    padding: 0.5em;
+}
+
+.contact-info-body3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: normal;
+    overflow-wrap: break-word;
+    height: 87vh;
+}
+
+.submit-code {
+    background-color: #011001;
+    border: 0.1em solid #1E2D3D;
+    max-width: 70vh;
+    min-height: 70vh;
+    border-radius: 2em;
+    padding: 1em;
+}
+
+#nameSubmit, #emailSubmit, #messageSubmit {
+    white-space: normal;
+}
+
+#contact {
+    border-right: 0;
+}
+
+#menu-bars-div {
+    border-left: 0;
+}
+
+#menu-bars, #personal-info-show1-span, .hidden, .index-find-me-2 {
+    display: none;
+}
+
+/*  */
+.sidebar {
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    right: -1500px;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../images/Background.png);
+    transition: right 0.9s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar-div, .sidebar-footer {
+    border: 0.05em solid #1E2D3D;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.sidebar-div {
+    padding: 1em;
+}
+
+.fa-xmark {
+    font-size: 2em;
+}
+
+.sidebar-footer {
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-footer > div {
+    border: 0.05em solid #1E2D3D;
+    border-top: 0;
+    height: 34%;
+    padding: 1em 1em 1em 1.7em;
+}
+
+.display-important {
+    display: block !important;
+}
+
+@media (max-width: 600px) {
+    .body-1 {
+        background-position: 0 0, -7em -1em;
+        background-size: cover, cover;
+        height: 99.8vh;
+    }
+
+    header > div, .content-right, footer, .index-find-me-1 {
+        display: none;
+    }
+
+    .index-find-me-2 {
+        display: block;
+    }
+
+    header {
+        min-height: 9vh;
+    }
+
+    #name, #menu-bars-div {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        font-size: 1.4em;
+    }
+
+    #name {
+        border-right: 0;
+    }
+
+    #menu-bars-div {
+        border-left: 0;
+    }
+
+    #menu-bars {
+        display: block;
+        padding-right: 0.5em;
+        font-size: 1.4em;
+    }
+
+    .menu-active {
+        right: 0;
+    }
+
+    /*about*/
+
+    .resume-body, .contact-body {
+        flex-direction: column;
+        overflow-x: hidden;
+        overflow-y: auto;
+        max-height: 85vh;
+        display: block;
+    }
+
+    .body-2 {
+        max-height: 100vh;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    .resume-header, .contact-header {
+        max-height: 6vh;
+    }
+
+    .resume-header > div, #resume-not-show, .projects-header, .contact-header {
+        display: none;
+    }
+
+    .fa-folder-open {
+        display: none !important;
+    }
+
+    #resume-show, #personal-info-show1-span {
+        display: block;
+        padding-top: 0.3em;
+        font-size: 1.1em;
+    }
+
+    .resume-body1 {
+        flex-direction: row;
+        align-self: flex-start;
+        justify-content: flex-start;
+        max-height: 5vh;
+        min-height: 5vh;
+        padding: 0;
+        flex: none;
+    }
+
+    .stick {
+        position: sticky;
+        z-index: 10;
+        top: 0;
+        background-color: #010C15;
+    }
+
+    .resume-body1 > div {
+        border-right: 0.05em solid #1E2D3D;
+        border-left: 0.05em solid #1E2D3D;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .resume-body2, .resume-body3 {
+        box-sizing: border-box;
+        overflow-y: hidden;
+        overflow-x: auto;
+        white-space: nowrap;
+        flex: 1;
+    }
+
+    .resume-body3 {
+        min-height: 110em;
+    }
+
+    #bio {
+        flex: 0.8;
+    }
+
+    #skills {
+        flex: 1;
+    }
+
+    #workExp, #education {
+        flex: 2;
+    }
+
+    .numbers, .sentences {
+        max-height: 100%;
+        height: auto;
+    }
+
+    .snippet-body {
+        min-width: 45em;
+    }
+
+    .separator {
+        min-width: 47em;
+        margin-right: 2em;
+    }
+
+    .view-project {
+        flex: 25;
+        min-width: fit-content;
+    }
+
+    .snippet-header {
+        min-width: 37em;
+    }
+
+    /*Projects*/
+
+    .projects-body {
+        flex-direction: column;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .hidden {
+        align-self: flex-start;
+        padding: 0.2em;
+    }
+
+    .dropdown {
+        transition: min-height 0.5s ease;
+        overflow: hidden;
+        max-height: 3em;
+        min-height: 3em;
+    }
+
+    .dropdown.open {
+        max-height: 30em;
+        min-height: 30em;
+    }
+
+    .dropdown-content {
+        display: none;
+        align-self: flex-start;
+        padding: 0.8em;
+        flex-direction: column;
+    }
+
+    .dropdown-button {
+        display: block;
+    }
+
+    .projects-body {
+        flex: 1;
+        align-self: flex-start;
+        justify-self: flex-start;
+        max-height: 90.5vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .projects-body2 {
+        overflow-x: hidden;
+        overflow-y: auto;
+        flex-direction: column;
+        min-height: 81vh;
+    }
+
+    .project {
+        transform: scale(0.7);
+        margin: 0 0 0 1.2em;
+        left: -2em;
+        position: relative;
+    }
+
+    .project:hover {
+        transform: scale(0.75);
+    }
+
+    /*Contact*/
+    .contact-info-body3 {
+        display: none !important;
+    }
+
+    .column {
+        flex-direction: column;
+    }
+
+    .second-transition.open {
+        max-height: 15em;
+        min-height: 15em;
+    }
+
+    .second-transition {
+        transition: min-height 0.3s ease;
+    }
+
+    .contact-body {
+        height: 100%;
+        position: relative;
+        min-height: 90.6vh;
+    }
+
+    .contact-info-body2 {
+        height: 81.5vh;
+        width: 94.1vw !important;
+    }
+
+    .contact-info-body2 > div {
+        padding-left: 13%;
+    }
+
+    .contact-info-body2 > div > input, .contact-info-body2 > div > textarea {
+        width: 80%;
+    }
+
+}

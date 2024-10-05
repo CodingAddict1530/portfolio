@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Meta Data -->
+    <head>
+        <title>Portfolio</title>
+		<meta charset="UTF-8">
+        <meta name="description" content="My Portfolio">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="HTML, CSS, JavaScript, Portfolio">
+        <meta name="author" content="Alexis Mugisha">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+    </head>
+
+    <!-- Body -->
+    <body class="body-2">
+
+        <!-- Top Horizontal Bar -->
+        <header>
+            <div id="name" class="flex-18-4">
+                alexis-mugisha
+            </div>
+            <div id="hello" class="flex-5 hello pointer" onclick="helloPage()">
+                _hello
+            </div>
+            <div id="about" class="flex-6 about pointer" onclick="aboutPage()">
+                _about-me
+            </div>
+            <div id="projects" class="flex-5 projects pointer" onclick="projectsPage()">
+                _projects
+            </div>
+            <div class="flex-50">
+
+            </div>
+            <div id="contact" class="flex-6 contact pointer" onclick="contactPage()">
+                _contact-me
+            </div>
+            <div id="menu-bars-div" class="pointer" onclick="toggleSidebar()">
+                <i id="menu-bars" class="fas fa-bars"></i>
+            </div>
+        </header>
+
+        <!-- Sidebar -->
+        <div id="sidebar" class="sidebar">
+            <div class="flex-2 sidebar-div pointer" onclick="toggleSidebar()">
+                <div class="flex-8">alexis-mugisha</div>
+                <div class="flex-1"><i class="fas fa-xmark"></i></div>
+            </div>
+            <div class="flex-2 sidebar-div white pointer" onclick="helloPage()">
+                _hello
+            </div>
+            <div class="flex-2 sidebar-div white pointer" onclick="aboutPage()">
+                _about-me
+            </div>
+            <div class="flex-2 sidebar-div white pointer" onclick="projectsPage()">
+                _projects
+            </div>
+            <div class="flex-2 sidebar-div white pointer" onclick="contactPage()">
+                _contact-me
+            </div>
+            <div class="flex-30 sidebar-div">
+
+            </div>
+            <div class="flex-2 sidebar-footer">
+                <div class="flex-8">
+                    find me on:
+                </div>
+                <div class="flex-1 pointer">
+                    <i class="fab fa-linkedin-in" onclick="linkedin()"></i>
+                </div>
+                <div class="flex-1 pointer" onclick="email()">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="flex-1 pointer" onclick="github()">
+                    <i class="fab fa-github"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content-2">
+
+            <!-- Main Content Header -->
+            <div class="flex-2 projects-header">
+                <div class="flex-18">
+                    projects
+                </div>
+                <div class="flex-16">
+                    projects
+                </div>
+                <div class="flex-20">
+                    
+                </div>
+                <div class="flex-38-5">
+                    
+                </div>
+            </div>
+
+            <!-- Main Content Body -->
+            <div class="flex-50 projects-body">
+
+                <!-- Main Content Body Column 1 -->
+                <div class="flex-11-67 project-body1 dropdown stick">
+                    <span class="white hidden pointer dropdown-button"><i class="fas fa-caret-down"></i>&nbsp;projects</span>
+                    <div class="dropdown-content">
+                        <div class="checkbox-container pointer">
+                            <label class="custom-checkbox">
+                                <input type="checkbox" value="java" onchange="filterItems()">
+                                <span class="checkmark"></span>&nbsp;&nbsp;&nbsp;
+                                <i class="fab fa-java orange language-icon"></i>&nbsp;<strong>Java</strong>
+                            </label>
+                        </div>
+                        <div class="checkbox-container pointer">
+                            <label class="custom-checkbox">
+                                <input type="checkbox" value="python" onchange="filterItems()">
+                                <span class="checkmark"></span>&nbsp;&nbsp;&nbsp;
+                                <i class="fab fa-python blue language-icon"></i>&nbsp;<strong>Python</strong>
+                            </label>
+                        </div>
+                        <div class="checkbox-container pointer">
+                            <label class="custom-checkbox">
+                                <input type="checkbox" value="js" onchange="filterItems()">
+                                <span class="checkmark"></span>&nbsp;&nbsp;&nbsp;
+                                <i class="fab fa-js green language-icon"></i>&nbsp;<strong>JavaScript</strong>
+                            </label>
+                        </div>
+                        <div class="checkbox-container pointer">
+                            <label class="custom-checkbox">
+                                <input type="checkbox" value="html" onchange="filterItems()">
+                                <span class="checkmark"></span>&nbsp;&nbsp;&nbsp;
+                                <i class="fab fa-html5 purple language-icon"></i>&nbsp;<strong>HTML</strong>
+                            </label>
+                        </div>
+                        <div class="checkbox-container pointer">
+                            <label class="custom-checkbox">
+                                <input type="checkbox" value="css" onchange="filterItems()">
+                                <span class="checkmark"></span>&nbsp;&nbsp;&nbsp;
+                                <i class="fab fa-css3-alt purple language-icon"></i>&nbsp;<strong>CSS</strong>
+                            </label>
+                        </div>
+                        <div class="checkbox-container pointer">
+                            <label class="custom-checkbox">
+                                <input type="checkbox" value="javafx" onchange="filterItems()">
+                                <span class="checkmark"></span>&nbsp;&nbsp;&nbsp;
+                                <i class="fab fa-f orange language-icon small"></i>
+                                <i class="fab fa-x orange language-icon small"></i>&nbsp;<strong>JavaFX</strong>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Content Body Column 2 -->
+                <div id="projects-body2" class="flex-50 scrollable projects-body2">
+                    <div class="change-project">
+                        <div id="previous" class="pointer" onclick="previous('left')">
+                            Previous
+                        </div>
+                        <div id="next" class="pointer" onclick="next('left')">
+                            Next
+                        </div>
+                    </div>
+                    <div id="project3" class="project flex-1 java javafx" onmouseenter="startSlideshow('project3', 'project3')" onmouseleave="stopSlideshow('project3')">
+                        <div class="project-header">
+                            <span class="blue"><b>Project 1</b></span> <b>// _java-ide</b> (still receives updates)
+                        </div>
+                        <div class="project-body">
+                            <div class="project-body-img project3 slide1">
+                            </div>
+                            <div class="project-body-img project3 slide2">
+                            </div>
+                            <div class="project-body-img project3 slide3">
+                            </div>
+                            <div class="project-body-img project3 slide4">
+                            </div>
+                            <div class="project-body-img project3 slide5">
+                            </div>
+                            <div class="project-body-body">
+                                <div class="project-body-body-text">
+                                    An integrated development environment for java.&nbsp;&nbsp;
+                                    <i class="fab fa-java orange language-icon"></i>&nbsp;
+                                    <i class="fab fa-f orange language-icon small pad"></i>
+                                    <i class="fab fa-x orange language-icon small pad"></i>
+                                </div>
+                                <div class="project-body-body-button" onclick="javaIDEProject()">
+                                    view-project
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="project1" class="project flex-1 java javafx" onmouseenter="startSlideshow('project1', 'project1')" onmouseleave="stopSlideshow('project1')">
+                        <div class="project-header">
+                            <span class="blue"><b>Project 2</b></span> <b>// _library-system</b>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-body-img project1 slide1">
+                            </div>
+                            <div class="project-body-img project1 slide2">
+                            </div>
+                            <div class="project-body-img project1 slide3">
+                            </div>
+                            <div class="project-body-img project1 slide4">
+                            </div>
+                            <div class="project-body-img project1 slide5">
+                            </div>
+                            <div class="project-body-img project1 slide6">
+                            </div>
+                            <div class="project-body-img project1 slide7">
+                            </div>
+                            <div class="project-body-img project1 slide8">
+                            </div>
+                            <div class="project-body-body">
+                                <div class="project-body-body-text">
+                                    A system for managing library activities.&nbsp;&nbsp;
+                                    <i class="fab fa-java orange language-icon"></i>&nbsp;
+                                    <i class="fab fa-f orange language-icon small pad"></i>
+                                    <i class="fab fa-x orange language-icon small pad"></i>
+                                </div>
+                                <div class="project-body-body-button" onclick="librarySystemProject()">
+                                    view-project
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="project2" class="project flex-1 html css js" onmouseenter="startSlideshow('project2', 'project2')" onmouseleave="stopSlideshow('project2')">
+                        <div class="project-header">
+                            <span class="blue"><b>Project 3</b></span> <b>// _portfolio</b> (still receives updates)
+                        </div>
+                        <div class="project-body">
+                            <div class="project-body-img project2 slide1">
+                            </div>
+                            <div class="project-body-img project2 slide2">
+                            </div>
+                            <div class="project-body-img project2 slide3">
+                            </div>
+                            <div class="project-body-img project2 slide4">
+                            </div>
+                            <div class="project-body-body">
+                                <div class="project-body-body-text">
+                                    A website to showcase one's skills&nbsp;&nbsp;
+                                    <i class="fab fa-html5 purple language-icon"></i>&nbsp;
+                                    <i class="fab fa-css3-alt purple language-icon"></i>&nbsp;
+                                    <i class="fab fa-js green language-icon"></i>
+                                </div>
+                                <div class="project-body-body-button" onclick="portfolioProject()">
+                                    view-project
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Horizontal Bar -->
+        <footer>
+            <div class="flex-5">
+                find me on:
+            </div>
+            <div id="linkedin" class="flex-1 pointer">
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+            <div class="flex-1 pointer" onclick="email()">
+                <i class="fas fa-envelope"></i>
+            </div>
+            <div class="flex-50 center">
+                <span class="pointer" onclick="email()">amugisha005@gmail.com</span>
+            </div>
+            <div id="github" class="flex-8 pointer">
+                @CodingAddict1530&nbsp;<i class="fab fa-github"></i>
+            </div>
+        </footer>
+
+        <!-- JavaScript -->
+        <script src="js/script.js"></script>
+    </body>
+</html>

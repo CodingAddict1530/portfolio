@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Meta Data -->
+    <head>
+        <title>Portfolio</title>
+		<meta charset="UTF-8">
+        <meta name="description" content="My Portfolio">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="HTML, CSS, JavaScript, Portfolio">
+        <meta name="author" content="Alexis Mugisha">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    </head>
+
+    <!-- Body -->
+    <body class="body-2" >
+
+        <!-- Top Horizontal Bar -->
+        <header>
+            <div id="name" class="flex-18-4">
+                alexis-mugisha
+            </div>
+            <div id="hello" class="flex-5 hello pointer" onclick="helloPage()">
+                _hello
+            </div>
+            <div id="about" class="flex-6 about pointer" onclick="aboutPage()">
+                _about-me
+            </div>
+            <div id="projects" class="flex-5 projects pointer" onclick="projectsPage()">
+                _projects
+            </div>
+            <div class="flex-50">
+
+            </div>
+            <div id="contact" class="flex-6 contact pointer" onclick="contactPage()">
+                _contact-me
+            </div>
+            <div id="menu-bars-div" class="pointer" onclick="toggleSidebar()">
+                <i id="menu-bars" class="fas fa-bars"></i>
+            </div>
+        </header>
+
+        <!-- Sidebar -->
+        <div id="sidebar" class="sidebar">
+            <div class="flex-2 sidebar-div pointer" onclick="toggleSidebar()">
+                <div class="flex-8">alexis-mugisha</div>
+                <div class="flex-1"><i class="fas fa-xmark"></i></div>
+            </div>
+            <div class="flex-2 sidebar-div white pointer" onclick="helloPage()">
+                _hello
+            </div>
+            <div class="flex-2 sidebar-div white pointer" onclick="aboutPage()">
+                _about-me
+            </div>
+            <div class="flex-2 sidebar-div white pointer" onclick="projectsPage()">
+                _projects
+            </div>
+            <div class="flex-2 sidebar-div white pointer" onclick="contactPage()">
+                _contact-me
+            </div>
+            <div class="flex-30 sidebar-div">
+
+            </div>
+            <div class="flex-2 sidebar-footer">
+                <div class="flex-8">
+                    find me on:
+                </div>
+                <div class="flex-1 pointer">
+                    <i class="fab fa-linkedin-in" onclick="linkedin()"></i>
+                </div>
+                <div class="flex-1 pointer" onclick="email()">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="flex-1 pointer" onclick="github()">
+                    <i class="fab fa-github"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div id="content-2" class="content-2">
+
+            <!-- Main Content Header -->
+            <div class="flex-16 contact-header">
+                <div class="flex-18">
+                    contacts
+                </div>
+                <div class="flex-16">
+                    contacts
+                </div>
+                <div class="flex-20">
+                    
+                </div>
+                <div class="flex-38-5">
+                    
+                </div>
+            </div>
+
+            <!-- Main Content Body -->
+            <div class="flex-50 contact-body">
+
+                <!-- Main Content Body Column 1 -->
+                <div class="flex-18 contact-info-body1 dropdown second-transition stick column">
+                    <span class="white hidden pointer dropdown-button"><i class="fas fa-caret-down"></i>&nbsp;contacts</span>
+                    <div class="dropdown-content">
+                        <div class="contact-hide">
+                            <i class="fas fa-envelope orange"></i>&nbsp;amugisha005@gmail.com
+                        </div>
+                        <div class="contact-hide">
+                            <i class="fas fa-phone green"></i>&nbsp;+1 (343) 630-4295
+                        </div>
+                        <div class="contact-hide">
+                            <i class="fab fa-github blue"></i>&nbsp;CodingAddict1530
+                        </div>
+                        <div class="contact-hide">
+                            <i class="fab fa-linkedin white"></i>&nbsp;Alexis Mugisha
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Content Body Column 2 -->
+                <div class="flex-37-4 scrollable contact-info-body2">
+                    <div class="name">
+                        _name:<br>
+                        <input id="nameInput" type="text" class="contact-input" placeholder="John Doe">
+                    </div>
+                    <div class="email">
+                        _email:<br>
+                        <input id="emailInput" type="text" class="contact-input" placeholder="jodoe@gmail.com">
+                    </div>
+                    <div class="message">
+                        _message:<br>
+                        <textarea id="messageInput" class="contact-input textarea" placeholder="Great Portfolio!"></textarea><br><br>
+                        <button id="reset" class="submitBtn pointer">submit-message</button>
+                    </div>
+                    
+                </div>
+
+                <!-- Main Content Body Column 3 -->
+                <div class="flex-38-6 scrollable contact-info-body3">
+                    <div class="submit-code">
+                        <span class="purple">const <span class="blue">button</span> = 
+                        <span class="blue">document<span class="white">.</span>querySelector</span>
+                        <span class="white">(<span class="orange">'#sendBtn'</span>);</span></span><br><br>
+                        
+                        <span class="purple">const <span class="blue">message</span> = </span><span class="white">{</span><br>
+                        <span class="blue">&nbsp;&nbsp;&nbsp;&nbsp;name<span class="white"> : </span></span>
+                        <span id="nameSubmit" class="orange"></span><span class="white">,</span><br>
+                        <span class="blue">&nbsp;&nbsp;&nbsp;&nbsp;email<span class="white"> : </span></span>
+                        <span id="emailSubmit" class="orange"></span><span class="white">,</span><br>
+                        <span class="blue">&nbsp;&nbsp;&nbsp;&nbsp;message<span class="white"> : </span></span>
+                        <span id="messageSubmit" class="orange"></span><br>
+                        <span class="white">}</span><br><br>
+                        <span class="blue">button<span class="white">.</span>addEventListener</span>
+                        <span class="white">(<span class="orange">'click'</span>, () <span class="purple">=></span> {</span><br>
+                        <span class="blue">&nbsp;&nbsp;&nbsp;&nbsp;form<span class="white">.</span>send<span class="white">(</span>message<span class="white">);</span></span><br>
+                        <span>)}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Horizontal Bar -->
+        <footer>
+            <div class="flex-5">
+                find me on:
+            </div>
+            <div id="linkedin" class="flex-1 pointer">
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+            <div class="flex-1 pointer" onclick="email()">
+                <i class="fas fa-envelope"></i>
+            </div>
+            <div class="flex-50 center">
+                <span class="pointer" onclick="email()">amugisha005@gmail.com</span>
+            </div>
+            <div id="github" class="flex-8 pointer">
+                @CodingAddict1530&nbsp;<i class="fab fa-github"></i>
+            </div>
+        </footer>
+
+        <!-- JavaScript -->
+        <script src="js/script.js"></script>
+    </body>
+</html>

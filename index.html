@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Meta Data -->
+    <head>
+        <title>Portfolio</title>
+		<meta charset="UTF-8">
+        <meta name="description" content="My Portfolio">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="HTML, CSS, JavaScript, Portfolio">
+        <meta name="author" content="Alexis Mugisha">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+    </head>
+
+    <!-- Body -->
+    <body class="body-1">
+
+        <!-- Top Horizontal Bar -->
+        <header>
+            <div id="name" class="flex-18-4">
+                alexis-mugisha
+            </div>
+            <div id="hello" class="flex-5 hello pointer" onclick="helloPage()">
+                _hello
+            </div>
+            <div id="about" class="flex-6 about pointer" onclick="aboutPage()">
+                _about-me
+            </div>
+            <div id="projects" class="flex-5 projects pointer" onclick="projectsPage()">
+                _projects
+            </div>
+            <div class="flex-50">
+
+            </div>
+            <div id="contact" class="flex-6 contact pointer" onclick="contactPage()">
+                _contact-me
+            </div>
+            <div id="menu-bars-div" class="pointer" onclick="toggleSidebar()">
+                <i id="menu-bars" class="fas fa-bars"></i>
+            </div>
+        </header>
+
+        <!-- Sidebar -->
+        <div id="sidebar" class="sidebar">
+            <div class="flex-2 sidebar-div pointer" onclick="toggleSidebar()">
+                <div class="flex-8">alexis-mugisha</div>
+                <div class="flex-1"><i class="fas fa-xmark"></i></div>
+            </div>
+            <div class="flex-2 sidebar-div white pointer" onclick="helloPage()">
+                _hello
+            </div>
+            <div class="flex-2 sidebar-div white pointer" onclick="aboutPage()">
+                _about-me
+            </div>
+            <div class="flex-2 sidebar-div white pointer" onclick="projectsPage()">
+                _projects
+            </div>
+            <div class="flex-2 sidebar-div white pointer" onclick="contactPage()">
+                _contact-me
+            </div>
+            <div class="flex-30 sidebar-div">
+
+            </div>
+            <div class="flex-2 sidebar-footer">
+                <div class="flex-8">
+                    find me on:
+                </div>
+                <div class="flex-1 pointer">
+                    <i class="fab fa-linkedin-in" onclick="linkedin()"></i>
+                </div>
+                <div class="flex-1 pointer" onclick="email()">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="flex-1 pointer" onclick="github()">
+                    <i class="fab fa-github"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div id="content-1" class="content-1">
+            <div class="flex-5">
+
+            </div>
+            <div id="content-left" class="content-left">
+                <div id="content-left-text-1" class="content-left-text-1">
+                    Hi all. I am
+                </div>
+                <div id="content-left-text-2" class="content-left-text-2">
+                    Alexis Mugisha
+                </div>
+                <div id="content-left-text-3" class="content-left-text-3">
+                    > Software Developer<br>> Full-stack Developer
+                </div>
+                <div class="flex-3">
+                    <br><br><br>// I don't code all day! <br>// I'm a sportsman and study at <br>// <span class="pointer" onclick="college()"><b>Algonquin College</b></span> as well.
+                </div>
+                <div id="flex-1" class="flex-1">
+                    <br><br><br>
+                </div>
+                <div id="content-left-text-4" class="content-left-text-4">
+                    <span class="index-find-me-1">// you can see more about my projects on my GitHub page</span>
+                    <span class="index-find-me-2">// find my profile on GitHub</span>
+                </div>
+                <div id="content-left-text-5" class="content-left-text-5">
+                    <span class="blue">String</span> <span class="green">githubLink</span> <span class="white">=</span> <span class="orange pointer" onclick="github()">"https://github.com/CodingAddict1530/";</span>
+                </div>
+            </div>
+            <div id="flex-5" class="flex-1">
+
+            </div>
+            <div id="content-right" class="content-right">
+                <img id="image-me" class="image-me" src="images/image.jpeg" alt="Alexis Mugisha">
+            </div>
+            <div class="flex-5">
+
+            </div>
+        </div>
+
+        <!-- Bottom Horizontal Bar -->
+        <footer>
+            <div class="flex-5">
+                find me on:
+            </div>
+            <div id="linkedin" class="flex-1 pointer">
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+            <div class="flex-1 pointer" onclick="email()">
+                <i class="fas fa-envelope"></i>
+            </div>
+            <div class="flex-50 center">
+                <span class="pointer" onclick="email()">amugisha005@gmail.com</span>
+            </div>
+            <div id="github" class="flex-8 pointer">
+                @CodingAddict1530&nbsp;<i class="fab fa-github"></i>
+            </div>
+        </footer>
+
+        <!-- JavaScript -->
+        <script src="js/script.js"></script>
+    </body>
+</html>
