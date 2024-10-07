@@ -436,6 +436,14 @@ function portfolioProject() {
 }
 
 /**
+ * Opens a link to the portfolio project GitHub repository in a new tab.
+ */
+function recipeManagerProject() {
+
+    window.open("https://github.com/CodingAddict1530/RecipeManager", "_blank");
+}
+
+/**
  * Opens a link to Algonquin College.
  */
 function college() {

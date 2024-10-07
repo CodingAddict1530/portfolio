@@ -713,6 +713,29 @@ header div, footer div {
     display: none;
 }
 
+/* Changes the image for slide 4 of project 2. */
+.project4.slide1 {
+    background: url("../images/Project4-1.png") no-repeat center;
+    background-size: 100% 100%;
+    width: 100%;
+}
+
+/* Changes the image for slide 4 of project 2. */
+.project4.slide2 {
+    background: url("../images/Project4-2.png") no-repeat center;
+    background-size: 100% 100%;
+    width: 100%;
+    display: none;
+}
+
+/* Changes the image for slide 4 of project 2. */
+.project4.slide3 {
+    background: url("../images/Project4-3.jpg") no-repeat center;
+    background-size: 100% 100%;
+    width: 100%;
+    display: none;
+}
+
 /*  */
 .project-body-body {
     padding: 1em;

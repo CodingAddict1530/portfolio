@@ -3,7 +3,7 @@
 
     <!-- Meta Data -->
     <head>
-        <title>Portfolio</title>
+        <title>Alexis Mugisha</title>
 		<meta charset="UTF-8">
         <meta name="description" content="My Portfolio">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +11,7 @@
         <meta name="author" content="Alexis Mugisha">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+        <link rel="icon" href=  "logo.jpeg"/>
     </head>
 
     <!-- Body -->
@@ -123,6 +124,13 @@
                                 <input type="checkbox" value="js" onchange="filterItems()">
                                 <span class="checkmark"></span>&nbsp;&nbsp;&nbsp;
                                 <i class="fab fa-js green language-icon"></i>&nbsp;<strong>JavaScript</strong>
+                            </label>
+                        </div>
+                        <div class="checkbox-container pointer">
+                            <label class="custom-checkbox">
+                                <input type="checkbox" value="php" onchange="filterItems()">
+                                <span class="checkmark"></span>&nbsp;&nbsp;&nbsp;
+                                <i class="fa-brands fa-php green language-icon small"></i>&nbsp;<strong>PHP</strong>
                             </label>
                         </div>
                         <div class="checkbox-container pointer">
@@ -243,6 +251,31 @@
                                     <i class="fab fa-js green language-icon"></i>
                                 </div>
                                 <div class="project-body-body-button" onclick="portfolioProject()">
+                                    view-project
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="project4" class="project flex-1 html css js php" onmouseenter="startSlideshow('project4', 'project4')" onmouseleave="stopSlideshow('project4')">
+                        <div class="project-header">
+                            <span class="blue"><b>Project 4</b></span> <b>// _recipe-manager</b>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-body-img project4 slide1">
+                            </div>
+                            <div class="project-body-img project4 slide2">
+                            </div>
+                            <div class="project-body-img project4 slide3">
+                            </div>
+                            <div class="project-body-body">
+                                <div class="project-body-body-text">
+                                    A web app for organizing cooking recipes&nbsp;&nbsp;
+                                    <i class="fab fa-html5 purple language-icon"></i>&nbsp;
+                                    <i class="fab fa-css3-alt purple language-icon"></i>&nbsp;
+                                    <i class="fab fa-js green language-icon"></i>&nbsp;
+                                    <i class="fa-brands fa-php green language-icon"></i>
+                                </div>
+                                <div class="project-body-body-button" onclick="recipeManagerProject()">
                                     view-project
                                 </div>
                             </div>
