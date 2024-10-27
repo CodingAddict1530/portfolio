@@ -135,6 +135,13 @@
                         </div>
                         <div class="checkbox-container pointer">
                             <label class="custom-checkbox">
+                                <input type="checkbox" value="dart" onchange="filterItems()">
+                                <span class="checkmark"></span>&nbsp;&nbsp;&nbsp;
+                                <i class="fa-brands fa-dart-lang purple language-icon small"></i>&nbsp;<strong>Dart</strong>
+                            </label>
+                        </div>
+                        <div class="checkbox-container pointer">
+                            <label class="custom-checkbox">
                                 <input type="checkbox" value="html" onchange="filterItems()">
                                 <span class="checkmark"></span>&nbsp;&nbsp;&nbsp;
                                 <i class="fab fa-html5 purple language-icon"></i>&nbsp;<strong>HTML</strong>
@@ -155,6 +162,34 @@
                                 <i class="fab fa-x orange language-icon small"></i>&nbsp;<strong>JavaFX</strong>
                             </label>
                         </div>
+                        <div class="checkbox-container pointer">
+                            <label class="custom-checkbox">
+                                <input type="checkbox" value="flutter" onchange="filterItems()">
+                                <span class="checkmark"></span>&nbsp;&nbsp;&nbsp;
+                                <i class="fa-brands fa-flutter purple language-icon small"></i>&nbsp;<strong>Flutter</strong>
+                            </label>
+                        </div>
+                        <div class="checkbox-container pointer">
+                            <label class="custom-checkbox">
+                                <input type="checkbox" value="mobile" onchange="filterItems()">
+                                <span class="checkmark"></span>&nbsp;&nbsp;&nbsp;
+                                <i class="fa-solid fa-mobile beige language-icon small"></i>&nbsp;<strong>Mobile</strong>
+                            </label>
+                        </div>
+                        <div class="checkbox-container pointer">
+                            <label class="custom-checkbox">
+                                <input type="checkbox" value="web" onchange="filterItems()">
+                                <span class="checkmark"></span>&nbsp;&nbsp;&nbsp;
+                                <i class="fa-solid fa-globe green language-icon small"></i>&nbsp;<strong>Web</strong>
+                            </label>
+                        </div>
+                        <div class="checkbox-container pointer">
+                            <label class="custom-checkbox">
+                                <input type="checkbox" value="desktop" onchange="filterItems()">
+                                <span class="checkmark"></span>&nbsp;&nbsp;&nbsp;
+                                <i class="fa-solid fa-desktop beige language-icon small"></i>&nbsp;<strong>Desktop</strong>
+                            </label>
+                        </div>
                     </div>
                 </div>
 
@@ -168,7 +203,7 @@
                             Next
                         </div>
                     </div>
-                    <div id="project3" class="project flex-1 java javafx" onmouseenter="startSlideshow('project3', 'project3')" onmouseleave="stopSlideshow('project3')">
+                    <div id="project3" class="project flex-1 java javafx desktop" onmouseenter="startSlideshow('project3', 'project3')" onmouseleave="stopSlideshow('project3')">
                         <div class="project-header">
                             <span class="blue"><b>Project 1</b></span> <b>// _java-ide</b> (still receives updates)
                         </div>
@@ -185,10 +220,11 @@
                             </div>
                             <div class="project-body-body">
                                 <div class="project-body-body-text">
-                                    An integrated development environment for java.&nbsp;&nbsp;
+                                    An IDE for java.&nbsp;&nbsp;
                                     <i class="fab fa-java orange language-icon"></i>&nbsp;
                                     <i class="fab fa-f orange language-icon small pad"></i>
-                                    <i class="fab fa-x orange language-icon small pad"></i>
+                                    <i class="fab fa-x orange language-icon small pad"></i>&nbsp;&nbsp;
+                                    <i class="fa-solid fa-desktop beige language-icon"></i>
                                 </div>
                                 <div class="project-body-body-button" onclick="javaIDEProject()">
                                     view-project
@@ -196,7 +232,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id="project1" class="project flex-1 java javafx" onmouseenter="startSlideshow('project1', 'project1')" onmouseleave="stopSlideshow('project1')">
+                    <div id="project1" class="project flex-1 java javafx desktop" onmouseenter="startSlideshow('project1', 'project1')" onmouseleave="stopSlideshow('project1')">
                         <div class="project-header">
                             <span class="blue"><b>Project 2</b></span> <b>// _library-system</b>
                         </div>
@@ -222,7 +258,8 @@
                                     A system for managing library activities.&nbsp;&nbsp;
                                     <i class="fab fa-java orange language-icon"></i>&nbsp;
                                     <i class="fab fa-f orange language-icon small pad"></i>
-                                    <i class="fab fa-x orange language-icon small pad"></i>
+                                    <i class="fab fa-x orange language-icon small pad"></i>&nbsp;&nbsp;
+                                    <i class="fa-solid fa-desktop beige language-icon"></i>
                                 </div>
                                 <div class="project-body-body-button" onclick="librarySystemProject()">
                                     view-project
@@ -230,7 +267,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id="project2" class="project flex-1 html css js" onmouseenter="startSlideshow('project2', 'project2')" onmouseleave="stopSlideshow('project2')">
+                    <div id="project2" class="project flex-1 html css js web" onmouseenter="startSlideshow('project2', 'project2')" onmouseleave="stopSlideshow('project2')">
                         <div class="project-header">
                             <span class="blue"><b>Project 3</b></span> <b>// _portfolio</b> (still receives updates)
                         </div>
@@ -248,7 +285,8 @@
                                     A website to showcase one's skills&nbsp;&nbsp;
                                     <i class="fab fa-html5 purple language-icon"></i>&nbsp;
                                     <i class="fab fa-css3-alt purple language-icon"></i>&nbsp;
-                                    <i class="fab fa-js green language-icon"></i>
+                                    <i class="fab fa-js green language-icon"></i>&nbsp;
+                                    <i class="fa-solid fa-globe green language-icon"></i>
                                 </div>
                                 <div class="project-body-body-button" onclick="portfolioProject()">
                                     view-project
@@ -256,7 +294,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id="project4" class="project flex-1 html css js php" onmouseenter="startSlideshow('project4', 'project4')" onmouseleave="stopSlideshow('project4')">
+                    <div id="project4" class="project flex-1 html css js php web" onmouseenter="startSlideshow('project4', 'project4')" onmouseleave="stopSlideshow('project4')">
                         <div class="project-header">
                             <span class="blue"><b>Project 4</b></span> <b>// _recipe-manager</b>
                         </div>
@@ -269,13 +307,40 @@
                             </div>
                             <div class="project-body-body">
                                 <div class="project-body-body-text">
-                                    A web app for organizing cooking recipes&nbsp;&nbsp;
+                                    A web app for cooking recipes&nbsp;&nbsp;
                                     <i class="fab fa-html5 purple language-icon"></i>&nbsp;
                                     <i class="fab fa-css3-alt purple language-icon"></i>&nbsp;
                                     <i class="fab fa-js green language-icon"></i>&nbsp;
-                                    <i class="fa-brands fa-php green language-icon"></i>
+                                    <i class="fa-brands fa-php green language-icon"></i>&nbsp;
+                                    <i class="fa-solid fa-globe green language-icon"></i>
                                 </div>
                                 <div class="project-body-body-button" onclick="recipeManagerProject()">
+                                    view-project
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="project5" class="project flex-1 dart flutter mobile desktop web" onmouseenter="startSlideshow('project5', 'project5')" onmouseleave="stopSlideshow('project5')">
+                        <div class="project-header">
+                            <span class="blue"><b>Project 5</b></span> <b>// _world-clock</b>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-body-img project5 slide1">
+                            </div>
+                            <div class="project-body-img project5 slide2">
+                            </div>
+                            <div class="project-body-img project5 slide3">
+                            </div>
+                            <div class="project-body-body">
+                                <div class="project-body-body-text">
+                                    An app for checking time&nbsp;&nbsp;
+                                    <i class="fa-brands fa-dart-lang purple language-icon"></i>&nbsp;
+                                    <i class="fa-brands fa-flutter purple language-icon"></i>&nbsp;
+                                    <i class="fa-solid fa-mobile beige language-icon"></i>&nbsp;
+                                    <i class="fa-solid fa-desktop beige language-icon"></i>&nbsp;
+                                    <i class="fa-solid fa-globe green language-icon"></i>
+                                </div>
+                                <div class="project-body-body-button" onclick="worldClockProject()">
                                     view-project
                                 </div>
                             </div>
