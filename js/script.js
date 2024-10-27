@@ -444,6 +444,14 @@ function recipeManagerProject() {
 }
 
 /**
+ * Opens a link to the world clock project GitHub repository in a new tab.
+ */
+function worldClockProject() {
+
+    window.open("https://github.com/CodingAddict1530/world_clock", "_blank");
+}
+
+/**
  * Opens a link to Algonquin College.
  */
 function college() {
